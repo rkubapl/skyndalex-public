@@ -80,7 +80,7 @@ exports.load = (gateway, discord) => {
     gateway.command("bot", "invite", "Zaproszenie do bota", "invite", [], (client, msg) => {
         discord.createMessage(msg, {
             embed: {
-                description: "https://discord.com/api/oauth2/authorize?client_id=804694672806379521&permissions=8&scope=bot",
+                description: "Link do zaproszenia bota na swój serwer: [kliknij](https://discord.com/api/oauth2/authorize?client_id=804694672806379521&permissions=8&scope=bot)",
                 color: 0x2ecc71
             }
         })
